@@ -1,0 +1,6 @@
+{
+  "name": "Nourish — Mindful Food & Hydration Sanctuary",
+  "description": "A mindful, sensory-rich nourishment companion featuring AI vision meal recognition, fluid water tracking, and compassionate weekly rhythm insights.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

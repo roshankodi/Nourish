@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", "Vollkorn", Georgia, Cambria, serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  --color-surface: #fcf9f1;
+  --color-surface-dim: #dcdad2;
+  --color-surface-bright: #fcf9f1;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-low: #f6f3eb;
+  --color-surface-container: #f1eee6;
+  --color-surface-container-high: #ebe8e0;
+  --color-surface-container-highest: #e5e2da;
+  --color-on-surface: #1c1c17;
+  --color-on-surface-variant: #434841;
+  --color-inverse-surface: #31312b;
+  --color-inverse-on-surface: #f3f1e9;
+  --color-outline: #737970;
+  --color-outline-variant: #c3c8bf;
+  --color-primary: #4a6549;
+  --color-on-primary: #ffffff;
+  --color-primary-container: #8ba888;
+  --color-on-primary-container: #243d24;
+  --color-primary-fixed: #ccebc7;
+  --color-primary-fixed-dim: #b0cfad;
+  --color-secondary: #4d6452;
+  --color-on-secondary: #ffffff;
+  --color-secondary-container: #cfe9d3;
+  --color-on-secondary-container: #536a58;
+  --color-secondary-fixed: #cfe9d3;
+  --color-secondary-fixed-dim: #b4cdb8;
+  --color-tertiary: #8b4e36;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-container: #d88e72;
+  --color-on-tertiary-container: #5b2813;
+  --color-tertiary-fixed: #ffdbce;
+  --color-tertiary-fixed-dim: #ffb59a;
+}
+
+@layer base {
+  html, body {
+    background-color: #fcf9f1;
+    color: #1c1c17;
+    font-family: var(--font-sans);
+    overscroll-behavior: none;
+    -webkit-tap-highlight-color: transparent;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-serif);
+    letter-spacing: -0.015em;
+  }
+
+  /* Prevent text selection and ligature artifacts */
+  svg {
+    flex-shrink: 0;
+  }
+}
+
+.debossed-well {
+  box-shadow: inset 0 2px 4px rgba(48, 53, 47, 0.08), inset 0 1px 2px rgba(48, 53, 47, 0.05), inset 0 -1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.debossed-light {
+  box-shadow: inset 0 1px 3px rgba(48, 53, 47, 0.06), inset 0 -1px 0 rgba(255, 255, 255, 0.7);
+}
+
+.ceramic-card {
+  box-shadow: 0 4px 16px rgba(48, 53, 47, 0.06), 0 1px 2px rgba(48, 53, 47, 0.04);
+}
+
+.ceramic-button-primary {
+  box-shadow: 0 4px 14px rgba(74, 101, 73, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.25);
+}
+
+.ceramic-button-primary:active {
+  transform: translateY(1px);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.carafe-glass {
+  background: rgba(246, 243, 235, 0.7);
+  backdrop-filter: blur(8px);
+  box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.9), inset 0 -3px 8px rgba(77, 100, 82, 0.12), 0 12px 24px -6px rgba(48, 53, 47, 0.08);
+}
+
